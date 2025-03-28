@@ -22,7 +22,7 @@ const Home = () => {
             repeat={0}
           />
           <br />
-          <TypeAnimation sequence={[600, "Name", 800, () => {}]} repeat={0} className="text-purple-600" />
+          <TypeAnimation sequence={[600, "Haider Ghauri", 800, () => {}]} repeat={0} className="text-purple-600" />
         </motion.h2>
 
         <motion.h1
