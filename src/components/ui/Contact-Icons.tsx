@@ -10,7 +10,7 @@ const socialLinks = [
   },
   {
     label: "LinkedIn",
-    href: "https://linkedin.com/in/haiderghauri",
+    href: "https://www.linkedin.com/in/haider-ghauri",
     icon: <FaLinkedin size={24} />,
     bgColor: "bg-sky-700",
   },
@@ -22,7 +22,7 @@ const socialLinks = [
   // },
   {
     label: "Email",
-    href: "mailto:your.email@example.com",
+    href: "mailto:haideralikhanh70@gmail.com",
     icon: <FaEnvelope size={24} />,
     bgColor: "bg-red-600",
   },
