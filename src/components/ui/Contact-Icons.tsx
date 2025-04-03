@@ -42,16 +42,16 @@ const ContactIcons = ({ showlabel, className }: ContactIconsProps) => {
           href={link.href}
           rel="noopener noreferrer"
           key={index}
-          className="flex justify-start items-center gap-4"
+          className="flex justify-start items-center gap-4 hover:scale-103 transition group"
         >
           <span
-            className={`cursor-pointer ${link.bgColor} bg-black p-2 rounded-full hover:opacity-80 hover:scale-103 flex`}
+            className={`cursor-pointer ${link.bgColor} bg-black p-2 rounded-full hover:opacity-80 flex`}
           >
             {link.icon}
           </span>
 
           {showlabel && (
-            <span className="text-sm font-semibold mr-1">{link.label}</span>
+            <span className="text-sm font-semibold mr-1 group-hover:text-purple-400 group-hover:underline">{link.label}</span>
           )}
         </a>
       ))}

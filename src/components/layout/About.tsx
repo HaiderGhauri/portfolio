@@ -13,7 +13,7 @@ const About = () => {
         initial={{ opacity: 0 }}
         animate={isInView ? { opacity: 1 } : { opacity: 0 }}
         transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto text-center mb-16"
+        className="max-w-4xl mx-auto text-center my-16 pb-20"
       >
         <motion.h2
           initial={{ y: 50, opacity: 0 }}

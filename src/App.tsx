@@ -11,7 +11,7 @@ function App() {
       <div className="fixed w-full z-10 top-4 px-6 xl:px-0">
       <Header />
       </div>
-      <div className="max-w-6xl mx-auto top-2 mb-14 md:mb-20 relative px-6 xl:px-0">
+      <div className="max-w-6xl mx-auto top-4 mb-14 md:mb-20 relative px-6 xl:px-0">
         <Home />
         <About />
         <Skills />

@@ -64,6 +64,8 @@ const Home = () => {
         >
           <Link
             to="contact"
+            smooth={true}
+            duration={700}
             className="bg-purple-600 text-slate-100 text-lg px-4 py-2 rounded-full inline-block font-semibold cursor-pointer hover:bg-purple-500 
             transition hover:scale-102"
           >

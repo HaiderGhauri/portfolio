@@ -1,5 +1,6 @@
 import { useInView, motion } from "framer-motion";
 import { useRef } from "react";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Projects = () => {
   const projects = [
@@ -45,10 +46,11 @@ const Projects = () => {
     },
     {
       title: "Portfolio",
+      image: "/portfolio.png",
       description:
         "A personal portfolio site showcasing my skills and projects, built with a modern, responsive design and smooth animations.",
       technologies: ["React", "JavaScript", "Tailwind CSS", "Framer Motion"],
-      link: "https://example.com/task-manager",
+      link: "https://haiderghauryportfolio.netlify.app/",
     },
     {
       title: "WordAtlas",
@@ -124,14 +126,14 @@ const Projects = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              className="bg-slate-700/60 p-6 shadow-sm rounded-2xl border border-slate-600 transition ease-in-out hover:shadow-purple-400"
+              className="bg-slate-700/60 p-6 shadow-sm rounded-2xl border border-slate-600 transition ease-in-out hover:shadow-purple-400 group"
             >
-              <h3 className="text-xl md:text-2xl font-semibold text-purple-400 mb-3">
+              <h3 className="text-xl md:text-2xl font-semibold text-purple-400 mb-3 group-hover:text-purple-500 group-hover:scale-105 transition">
                 {project.title}
               </h3>
 
               {project.image && (
-                <img src={project.image} alt="project image" className="mb-4 rounded-2xl"/>
+                <img src={project.image} alt="project image" className="mb-4 rounded-2xl h-70 w-full"/>
               )}
 
               <p className="text-slate-300 mb-4 min-h-24">
@@ -153,9 +155,9 @@ const Projects = () => {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 hover:text-purple-300 underline"
+                className="text-purple-400 hover:text-purple-500 underline flex items-center gap-1 w-fit mx-auto hover:scale-105 transition"
               >
-                {project.link.includes("github") ? "GitHub" : "Live Demo"}
+                {project.link.includes("github") ? "GitHub" : "Live Demo"} <GoArrowUpRight className="mt-1 text-lg" />
               </a>
             </motion.div>
           ))}
